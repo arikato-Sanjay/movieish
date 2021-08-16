@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "479601806325",
+    "project_id": "movieish-e47eb",
+    "storage_bucket": "movieish-e47eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479601806325:android:f0a2d564f16e6b2d1baebc",
+        "android_client_info": {
+          "package_name": "sky.app.movieish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479601806325-t3gdo3aph6so77mfitalpa06e1pe3uon.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sky.app.movieish",
+            "certificate_hash": "59a79023d1220f9e05ba6ff51116daaf3795a5e0"
+          }
+        },
+        {
+          "client_id": "479601806325-j9377988usk615k4p55k748hooe3b24g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALaZRaEzG8VOQztbK9kADWCnhboopgfaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479601806325-j9377988usk615k4p55k748hooe3b24g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
