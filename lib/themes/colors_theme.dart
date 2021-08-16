@@ -1,7 +1,6 @@
 import 'dart:ui';
 
 class ColorsTheme {
-
   //since its not required to instantiate the class hence private
   const ColorsTheme._();
 

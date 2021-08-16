@@ -4,8 +4,6 @@ import 'dart:io';
 import 'dart:convert';
 import 'package:movieish/backend/authentication.dart';
 import 'package:movieish/backend/database.dart';
-import 'package:movieish/common/constant/size_constants.dart';
-import 'package:movieish/common/extensions/size_extensions.dart';
 import 'package:movieish/screens/login/login_swithcer.dart';
 import 'package:movieish/screens/movieInfo.dart';
 
@@ -20,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   TextEditingController directorTEC = new TextEditingController();
   File _image;
   String imgStr = "";
+  bool isnull = false;
   MovieDatabase _movieDatabase = MovieDatabase();
   AuthenticationMethods authenticationMethods = new AuthenticationMethods();
   Future<List<MovieInfo>> _movie;
@@ -138,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           },
                         )
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -252,7 +251,9 @@ class _HomeScreenState extends State<HomeScreen> {
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(20),
                                 topRight: Radius.circular(20)),
-                            child: Image.memory(base64Decode(movies.photo))
+                            child: Image.memory(base64Decode(movies.photo))),
+                        SizedBox(
+                          height: 2,
                         ),
                         Text(
                           "Movie: " + movies.movieName,
@@ -264,10 +265,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         Text(
                           "Director: " + movies.directorName,
-                          style: TextStyle(
-                              color: Colors.black,
-                            fontSize: 20
-                          ),
+                          style: TextStyle(color: Colors.black, fontSize: 20),
+                        ),
+                        SizedBox(
+                          height: 2,
                         ),
                         Divider(
                           height: 0,
